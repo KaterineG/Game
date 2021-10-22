@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <script src="./scripts.js"></script>
+    <section class="gameContainer">
+        <div class="gameStart">
+            <div id="form">
+                <ul>
+                    <li> <label for="cardCount" class="form__header header">Кол-во карточек по вертикали/горизонтали</label></li>
+                    <li><input id='cardCount' type="text" placeholder="Введите число" value="4"></li>
+
+                    <li><button id="start" class="btn">Начать игру</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="downCounter hide">
+            <p class="header">Карточки будут скрыты через:<span id="sek"></span> </p>
+        </div>
+        <div class="cards hide">
+            <ul class="cards__list">
+
+            </ul>
+            <button class="card__btn btn">Начать заново</button>
+        </div>
+        <div class="gameEnd hide">
+            <p class="header">Игра закончена</p>
+            <button class="card__btn2 btn">Начать заново</button>
+        </div>
+    </section>
+</body>
+
+</html>
